@@ -162,11 +162,11 @@
                 <div class="form-group row">
                     <label for="upassword" class="col-sm-2 col-form-label">密码</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="upassword" name="upassword" value="">
+                        <input type="password" class="form-control" id="upassword" name="upassword" value="${user.upassword}">
                     </div>
                     <label for="upassword" class="col-sm-2 col-form-label">确认密码</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="reupassword" name="reupassword" value="" onblur="same(this.value)">
+                        <input type="password" class="form-control" id="reupassword" name="reupassword" value="${user.upassword}" onblur="same(this.value)">
                         <div id="f1"></div>
                     </div>
                 </div>

@@ -165,7 +165,6 @@
             <!--					<h4 class="typo-sub-heading mt-4 mb-3">Horizontal form</h4>-->
           <form action="doregister.html" method="post">
             <div class="form-group row">
-                <input type="hidden" value="-1" name="uid">
                 <label for="username" class="col-sm-2 col-form-label">用户名</label>
 
                 <div class="col-sm-10">

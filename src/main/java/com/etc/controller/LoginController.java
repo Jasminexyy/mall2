@@ -57,7 +57,11 @@ public class LoginController {
     @RequestMapping("checkrepeat")
     @ResponseBody
     public boolean checkRepeat(String username,HttpSession session){
-        int uid= (int) session.getAttribute("uid");
+        int uid=-1;
+        if(session.getAttribute("uid")==null){
+            uid=-1;}
+        else{
+            uid= (int) session.getAttribute("uid");}
         return loginService.checkRepeat(username,uid);
     }
 
