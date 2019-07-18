@@ -40,7 +40,7 @@ public class MyInterceptor implements HandlerInterceptor {
 		String path = request.getServletPath();
 		String subpath = path.substring(path.lastIndexOf("/")+1,path.indexOf("."));
 		String msg = new String();
-		if(path.indexOf("login")!=-1||path.indexOf("register")!=-1){
+		if(path.indexOf("login")!=-1||path.indexOf("register")!=-1||path.indexOf("checkrepeat")!=-1){
 			return true;
 		}
 		if(session.getAttribute("uid")!=null) {
